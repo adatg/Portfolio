@@ -104,6 +104,10 @@ h1 {
     opacity: 0.1;
 }
 
+h2, h4 {
+    color: #7c7c7c;
+}
+
 h2:before {
     position: absolute;
     display: block;
@@ -121,8 +125,15 @@ h4:after {
     padding-top: 10px;
 }
 
+
 #hero p {
     font-size: 2.5rem;
+}
+
+.active {
+    color: #34ada1 !important;
+    font-weight: 500;
+    transition: 0.4s linear;
 }
 
 .btn-green {
@@ -150,7 +161,7 @@ h4:after {
     width: 60px;
     height: 60px;
     padding: 0.5em;
-    box-shadow: 0 0 0 0.2rem rgba(52,58,64,.5);
+    border: 2px solid;
     cursor: auto !important;
     font-weight: 500;
 }
@@ -164,16 +175,9 @@ h4:after {
 }
 
 .list-services li {
-    font-size: 1.25rem;
-    padding-left: 1em;
-}
-
-.list-services li:before {
-        display: inherit;
-    position: absolute;
-    content: '';
-    list-style: disc;
-    color: rgba(52, 58, 64, 0.27);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #343a40;
 }
 
 .card {
@@ -183,6 +187,43 @@ h4:after {
 #contact li {
     height: 29px;
     width: 29px;
+}
+
+.form-control:focus {
+    border-color: #009688;
+    box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.18);
+}
+.rotate-this {
+    flex-direction: row;
+    transition: 0.5s ease-in-out;
+}
+.rotated {
+    display: flex;
+    flex-direction: column !important;
+    position: absolute;
+    right: 10px;
+    justify-content: space-between;
+    min-height: 300px;
+    top: 20px;
+    transition: 0.2s ease-in-out;
+}
+.rotate {
+    -webkit-transform: rotate(90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+
+    /* IE */
+    -ms-transform: rotate(90deg);
+
+    /* Opera */
+    -o-transform: rotate(90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    transition: 0.2s ease-in-out;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
