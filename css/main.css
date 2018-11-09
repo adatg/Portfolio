@@ -160,14 +160,15 @@ h4:after {
 .btn-lang button.rounded-circle {
     width: 60px;
     height: 60px;
-    padding: 0.5em;
+    padding: 0.3em;
     border: 2px solid;
     cursor: auto !important;
     font-weight: 500;
 }
 
-.btn-frame button {
-    cursor: auto !important;
+.btn-frame p {
+    border-bottom: 2px solid;
+    font-weight: 500;
 }
 
 .heading-services {
@@ -224,6 +225,64 @@ h4:after {
 
     transition: 0.2s ease-in-out;
     text-align: center;
+}
+
+#about-text {
+    position: relative;
+    opacity: 0;
+    -webkit-transition: opacity 700ms cubic-bezier(0.694, 0, 0.335, 1);
+    -o-transition: opacity 700ms cubic-bezier(0.694, 0, 0.335, 1);
+    transition: opacity 700ms cubic-bezier(0.694, 0, 0.335, 1);
+    padding: 2em 1em;
+}
+
+#about-text.visible {
+    opacity: 1;
+}
+
+.wrapper span {
+    display: block;
+    -webkit-transform: translateY(20px) rotate(3deg);
+    -ms-transform: translateY(20px) rotate(3deg);
+    transform: translateY(20px) rotate(3deg);
+    opacity: 0;
+    -webkit-transition: transform 0.65s ease, opacity 0.65s ease;
+    -o-transition: transform 0.65s ease, opacity 0.65s ease;
+    -webkit-transition: opacity 0.65s ease, -webkit-transform 0.65s ease;
+    transition: opacity 0.65s ease, -webkit-transform 0.65s ease;
+    transition: transform 0.65s ease, opacity 0.65s ease;
+    transition: transform 0.65s ease, opacity 0.65s ease, -webkit-transform 0.65s ease;
+}
+
+.wrapper span:nth-child(1) {
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.wrapper span:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.wrapper span:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.wrapper span:nth-child(4) {
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+#about-text.visible .wrapper span {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 @media (min-width: 1200px) {

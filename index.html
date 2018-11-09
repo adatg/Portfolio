@@ -11,8 +11,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Style -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -69,8 +72,9 @@
         <div class="col-lg-3 col-md-3">
           <h2 class="heading-about">About me.</h2>
         </div>
-        <div class="col-lg-9 col-md-9">
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. Quisque quis nisl magna. Etiam ultrices neque vitae orci varius vehicula. Nullam nec nisi nec diam maximus porttitor. Sed vulputate laoreet nunc et efficitur. </p>
+        <div class="col-lg-9 col-md-9" id="about-text">
+          <p class="text-justify wrapper">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, </span><span>egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis</span><span> tristique dignissim. Quisque quis nisl magna. Etiam ultrices neque vitae orci varius vehicula. Nullam</span><span> nec nisi nec diam maximus porttitor. Sed vulputate laoreet nunc et efficitur.</span> </p>
         </div>
       </div>
       <div class="row py-5">
@@ -95,10 +99,10 @@
           </ul>
           <ul class="d-flex list-inline my-4 btn-frame">
             <li class="pr-2">
-              <button class="btn  bg-dark text-light  text-uppercase py-2 px-4">Bootstrap</button>
+              <p class="text-uppercase py-2 px-4">Bootstrap</p>
             </li>
             <li class="pr-2">
-              <button class="btn  bg-dark text-light  text-uppercase py-2 px-4">Wordpress</button>
+              <p class="text-uppercase py-2 px-4">Wordpress</p>
             </li>
             <!-- <li class="pr-2">
               <button class="btn  bg-dark text-light  text-uppercase py-2 px-4">GitHub</button>
@@ -127,7 +131,8 @@
           <h2 class="heading-projects">Projects.</h2>
         </div>
         <div class="col-lg-9">
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. Quisque quis nisl magna. Etiam ultrices neque vitae orci varius vehicula. Nullam nec nisi nec diam maximus porttitor. Sed vulputate laoreet nunc et efficitur. </p>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. Quisque quis nisl magna. Etiam ultrices neque vitae orci varius vehicula. Nullam nec nisi nec diam maximus porttitor. Sed vulputate laoreet nunc et efficitur. </p>
         </div>
       </div>
       <div class="row py-5">
@@ -144,7 +149,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="card">
             <div class="card-img-top">
-              <img class="img-fluid bg-light" src="img/placeimg_480_640_grayscale_nature.jpg" alt="">
+              <img class="img-fluid bg-light" src="img/shiransc.png" alt="">
             </div>
             <div class="card-body">
               <h5 class="card-title">Project title</h5>
@@ -156,7 +161,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="card">
             <div class="card-img-top">
-              <img class="img-fluid" src="img/placeimg_480_640_grayscale_nature.jpg" alt="" >
+              <img class="img-fluid" src="img/afeka.png" alt="" >
             </div>
             <div class="card-body">
               <h5 class="card-title">Project title</h5>
@@ -168,7 +173,7 @@
         <div class="col-lg-4 col-md-4">
           <div class="card">
             <div class="card-img-top">
-              <img class="img-fluid" src="img/placeimg_480_640_grayscale_nature.jpg" alt="">
+              <img class="img-fluid" src="img/girls.png" alt="">
             </div>
             <div class="card-body">
               <h5 class="card-title">Project title</h5>
@@ -188,8 +193,8 @@
         <div class="col-lg-3">
            <h2 class="heading-contact">Contact me.</h2>
         </div>
-        <div class="col-lg-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. 
+        <div class="col-lg-8" >
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. 
           </p>
         </div>
       </div>
@@ -226,11 +231,13 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <!-- Waypoints plugin -->
   <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Scripts -->
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
@@ -238,12 +245,19 @@
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+
+    // Initiate waypoint
     $(document).ready(function(){
       $('#hero').waypoint(function() {
         $('.rotate-this').toggleClass('rotated');
         $('.nav-link').toggleClass('rotate');
       },
-      {offset: '5%'})
+      {offset: '5%'});
+      $('#about-text').waypoint(function() {
+            $("#about-text").addClass('visible');
+            // $("#projects-text").addClass('visible');
+            // $("#contact-text").addClass('visible');
+        }, {offset:'70%'});
     });
 
     // Smooth Scrolling
