@@ -27,7 +27,7 @@
 
   <!-- Nav -->
   <nav class="navbar navbar-expand navbar-light px-5 sticky-top" id="">
-    <a class="navbar-brand font-weight-bold display-1" href="#">Ada.</a>
+    <a class="navbar-brand font-weight-bold display-1" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,7 +58,7 @@
       <div class="row">
         <div class="col">
           <h1 class="text-uppercase display-4 font-weight-bold">Welcome</h1>
-          <p class="w-75 copy-text">I am <span class="font-weight-bold">Ada Gilad</span>, frontend developer <br>from New York City</p>
+          <p class="w-lg-75 copy-text">I am <span class="font-weight-bold">Ada Gilad</span>, frontend developer <br>from New York City</p>
           <p class="underline-btn"><a class="text-dark" href="">Learn more about me</a><p>
         </div>
       </div>
@@ -68,40 +68,44 @@
   <!-- About -->
   <section id="about" class="py-5 mx-5 bg-light">
     <div class="container">
-      <div class="row py-5 mb-5">
-        <div class="col-lg-3 col-md-3">
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-12 px-md-5">
           <h2 class="heading-about">About me<span>.</span></h2>
         </div>
-        <div class="col-lg-9 col-md-9" id="about-text">
+        <div class="col-lg-9 col-md-12 px-md-5" id="about-text">
           <p class="text-justify wrapper">
-            <span>I am focused on building modern, engaging, design-forward websites that provide great UX and meet current best frontend practices. I have a deep curiosity to understanding how things work and I continuously strive to improve and expand my developer skills and knowledge.</span>
-            <span>In my free time I like to paint, try a new sport and play with my dog Toby.</span>
+            <span>I am focused on building modern, engaging, design-forward websites that provide great UX and meet current best frontend practices. Above all, I enjoy bringing ideas to life in the browser.</span>
+            <span>I have a deep curiosity to understanding how things work and I continuously aim to improve and expand my developer skills.</span>
+            
             </p>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row py-5">
-        <div class="col-lg-6 col-md-6">
+  </section>
+  <section id="skills" class="mx-5">
+    <div class="bg-half h-25 bg-light"></div>
+    <div class="container">
+      <div class="row py-5 bg-white">
+        <div class="col-lg-6 col-md-6 px-lg-5 ">
           <h4 class="mb-5">Skills</h4>
-          <ul class="d-flex list-inline btn-lang ">
+          <ul class="d-flex list-inline btn-lang justify-content-between">
             <li class="pr-3">
-              <button class="btn btn-dark rounded-circle text-uppercase">HTML</button>
+              <button class="btn btn-green text-light rounded-circle text-uppercase">HTML</button>
             </li>
             <li class="pr-3">
-              <button class="btn btn-dark rounded-circle text-uppercase">CSS</button>
+              <button class="btn btn-green text-light rounded-circle text-uppercase">CSS</button>
             </li>
             <li class="pr-3">
-              <button class="btn btn-dark rounded-circle text-uppercase">SASS</button>
+              <button class="btn btn-green text-light rounded-circle text-uppercase">SASS</button>
             </li>
             <li class="pr-3">
-              <button class="btn btn-dark rounded-circle text-uppercase">JS</button>
+              <button class="btn btn-green text-light rounded-circle text-uppercase">JS</button>
             </li>
             <!-- <li class="">
               <button class="btn btn-outline-dark rounded-circle">jQ</button>
             </li> -->
           </ul>
-          <ul class="d-flex list-inline my-4 btn-frame">
+          <ul class="d-flex list-inline my-4 btn-frame justify-content-between">
             <li class="pr-2">
               <p class="text-uppercase py-2 px-4">Bootstrap</p>
             </li>
@@ -113,8 +117,8 @@
             </li> -->
           </ul>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <h4 class="heading-services">Services</h4>
+        <div class="col-lg-6 col-md-6 px-lg-5">
+          <h4 class="mb-5">Services</h4>
           <ul class="list-services list-unstyled">
             <li>Website Development</li>
             <li>Template Customization</li>
@@ -128,7 +132,7 @@
   </section>
   <!-- END About -->
   <!-- Projects -->
-  <section id="projects" class="py-5">
+  <section id="projects" class="py-5 px-md-5">
     <div class="container">
       <div class="row py-5">
         <div class="col-lg-3">
@@ -136,7 +140,8 @@
         </div>
         <div class="col-lg-9">
           <p class="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. Quisque quis nisl magna. Etiam ultrices neque vitae orci varius vehicula. Nullam nec nisi nec diam maximus porttitor. Sed vulputate laoreet nunc et efficitur. </p>
+            Below you can explore some of the projects I worked on. I have built custom websites and customized themes both with HTML and on Wordpress. All my websites are responsive and SEO friendly. 
+          </p>
         </div>
       </div>
      <!--  <div class="row py-5">
@@ -150,80 +155,101 @@
         </div>
       </div> -->
       <div class="row pb-5">
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/shiransccr.png" alt=""></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/shiransccr.png" alt="">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-              
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Shiran Properties</h4>
+                <p class="card-text text-dark">Designed and built a custom website for a real estate investment firm</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, CSS, JS, PHP</small>
+                </p>
+              </div>
+            </a> 
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/afekasccr.png" alt="" ></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/afekasccr.png" alt="" >
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-             
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Afeka Investments</h4>
+                <p class="card-text text-dark">Built a custom website for a real estate investment firm in UK</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, CSS, JS</small>
+                </p>
+              </div>
+            </a> 
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/girlssccr.png" alt=""></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/girlssccr.png" alt="">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-              
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Girls of the World</h4>
+                <p class="card-text text-dark">Built and designed a custom website for a photographer</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, CSS, JS</small>
+                </p>
+              </div>
+            </a> 
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/hakosemcr.png" alt=""></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/hakosemcr.png" alt="">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-              
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Falafel Hakosem</h4>
+                <p class="card-text text-dark">Built and designed a website proposal for a restaurant owner</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, CSS, JS</small>
+                </p>
+              </div>
+            </a> 
           </div>
-
         </div>
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/cloudcr.png" alt=""></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/cloudcr.png" alt="">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-              
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Cloud Endure</h4>
+                <p class="card-text text-dark">Co-built a custom website on Wordpress for a cloud provider company</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, PHP, SASS, JS </small>
+                </p>
+              </div>
+            </a> 
           </div>
-          
         </div>
-        <div class="col-lg-6 col-md-4 mb-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
-            <div class="card-img-top">
-              <a href=""><img class="img-fluid" src="img/tymcurecr.png" alt=""></a>
+            <div class="card-img">
+              <img class="img-fluid" src="img/tymcurecr.png" alt="">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project details</p>
-              
-            </div>
+            <a class="" href="">
+              <div class="card-img-overlay">
+                <h4 class="card-title text-white">Tymcure</h4>
+                <p class="card-text text-dark">Co-built a custom website on Wordpress for a clinic</p>
+                <p class="card-text">
+                    <small class="text-muted">HTML, PHP, CSS, JS </small>
+                </p>
+              </div>
+            </a> 
           </div>
-          
         </div>
       </div>
     </div>
