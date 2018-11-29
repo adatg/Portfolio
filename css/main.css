@@ -108,57 +108,71 @@ h2, h4 {
     color: #7c7c7c;
 }
 
-/*h2:before {
-    position: absolute;
-    display: block;
-    color: #8080801c;
-    font-size: 2.5rem;
-    left: -60px;
-    top: -25px;
-}*/
 h2 span {
     color: #34ada1;
 }
 
 h4:before {
     border-bottom: 4px dotted #34ada1;
-    width: 20px;
+    width: 5px;
     display: inline-block;
     content: '';
-    margin-right: 0.2em;
+    margin-right: 0.1em;
 }
 
+li.nav-item {
+    width: 80px;
+}
 
-#hero p {
+#hero .copy-text {
     font-size: 2.5rem;
 }
 
-.active {
-    color: #34ada1 !important;
-    font-weight: 500;
-    transition: 0.4s linear;
-}
 
 .btn-green {
     background-color: #34ada1;
     border-color: #34ada1;
 }
 
-#hero .btn:hover {
-    opacity: 0.9;
+.active, .underline-btn a {
+    font-size: 1.2rem;
+    position: relative;
 }
 
-/*.heading-about:before {
-    content: 'About me.';
+.active {
+    transition: 0.4s linear;
 }
 
-.heading-projects:before {
-    content: 'Projects.';
+.underline-btn a:hover {
+    text-decoration: none;
 }
 
-.heading-contact:before {
-    content: 'Contact me.';
-}*/
+.active:before, .underline-btn a:before {
+    content: '';
+    background-color: #34ada187;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    z-index: -1;
+    transform: scaleY(1);
+    transition: 0.2s ease-in-out .2s;
+}
+
+.underline-btn a:before {
+     margin-top: -10px;
+}
+
+.active:before {
+    margin-bottom: 10px;
+}
+
+.active:hover:before, .underline-btn a:hover:before {
+    transform: scaleY(1.5);
+    transition: 0.2s ease-in-out .2s;
+}
 
 .btn-lang button.rounded-circle {
     width: 60px;
@@ -197,10 +211,12 @@ h4:before {
     border-color: #009688;
     box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.18);
 }
+
 .rotate-this {
     flex-direction: row;
     transition: 0.5s ease-in-out;
 }
+
 .rotated {
     display: flex;
     flex-direction: column !important;
@@ -211,6 +227,7 @@ h4:before {
     top: 20px;
     transition: 0.2s ease-in-out;
 }
+
 .rotate {
     -webkit-transform: rotate(90deg);
 
