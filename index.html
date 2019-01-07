@@ -15,25 +15,28 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin" rel="stylesheet">
   <!-- Style -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body data-spy="scroll" data-target="#nav-main" data-offset="30">
+  <div class="overlay"></div>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Nav -->
-  <nav class="navbar navbar-expand navbar-light px-5 sticky-top" id="">
+  <nav class="navbar navbar-expand-xlg navbar-light text-dark px-5 py-3 sticky-top" id="">
     <a class="navbar-brand font-weight-bold display-1" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="hamburger-to-close" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-middle"></span>
+    </div>
 
-    <div class="collapse navbar-collapse" id="nav-main">
-      <ul class="navbar-nav ml-auto rotate-this">
+    <div class="collapse navbar-collapse-custom" id="nav-main">
+      <ul class="navbar-nav pl-5 pt-5">
        <!--  <div class=""> -->
         <li class="nav-item">
           <a class="nav-link " href="#about">About</a>
@@ -58,8 +61,8 @@
       <div class="row">
         <div class="col">
           <h1 class="text-uppercase display-4 font-weight-bold">Welcome</h1>
-          <p class="w-lg-75 copy-text">I am <span class="font-weight-bold">Ada Gilad</span>, frontend developer <br>from New York City</p>
-          <p class="underline-btn"><a class="text-dark" href="">Learn more about me</a><p>
+          <p class="w-lg-75 copy-text">I am <span class="font-weight-bold">Ada Gilad</span>, front end developer <br>from New York City</p>
+          <p class="underline-btn"><a id="moreAbout" class="text-dark" href="#about">Learn more about me</a><p>
         </div>
       </div>
     </div>
@@ -82,7 +85,9 @@
       </div>
     </div>
   </section>
-  <section id="skills" class="mx-5">
+  <!-- END About -->
+  <!-- Skills -->
+  <section id="skills" class="mx-5 mb-5">
     <div class="bg-half h-25 bg-light"></div>
     <div class="container">
       <div class="row py-5 bg-white">
@@ -90,7 +95,7 @@
           <h4 class="mb-5">Skills</h4>
           <ul class="d-flex list-inline btn-lang justify-content-between">
             <li class="pr-3">
-              <button class="btn btn-green text-light rounded-circle text-uppercase">HTML</button>
+              <button class="btn btn-green text-light rounded-circle text-uppercase ">HTML</button>
             </li>
             <li class="pr-3">
               <button class="btn btn-green text-light rounded-circle text-uppercase">CSS</button>
@@ -118,7 +123,7 @@
           </ul>
         </div>
         <div class="col-lg-6 col-md-6 px-lg-5">
-          <h4 class="mb-5">Services</h4>
+          <h4 class="">Services</h4>
           <ul class="list-services list-unstyled">
             <li>Website Development</li>
             <li>Template Customization</li>
@@ -130,7 +135,7 @@
       </div>
     </div>
   </section>
-  <!-- END About -->
+  <!-- END Skills -->
   <!-- Projects -->
   <section id="projects" class="py-5 px-md-5">
     <div class="container">
@@ -158,7 +163,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
             <div class="card-img">
-              <img class="img-fluid" src="img/shiransccr.png" alt="">
+              <img class="img-fluid" src="img/gifsc.gif" alt="">
             </div>
             <a class="" href="">
               <div class="card-img-overlay">
@@ -259,11 +264,11 @@
   <section id="contact" class="py-5 bg-light">
     <div class="container">
       <div class="row py-5">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-12 px-md-5">
            <h2 class="heading-contact">Contact me<span>.</span></h2>
         </div>
         <div class="col-lg-8" >
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et eleifend lectus. Morbi eros ipsum, egestas eget purus nec, hendrerit accumsan est. Proin ac lacus nisi. Aliquam malesuada lectus sed felis tristique dignissim. 
+          <p class="text-justify">If you are interested in working together on your next projects and creating something awesome, send me an email. I will get back to you as soon as possible. 
           </p>
         </div>
       </div>
@@ -279,18 +284,23 @@
               </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="4" id="inputText" placeholder="Message"></textarea>
+              <textarea class="form-control" rows="6" id="inputText" placeholder="Describe what you need..."></textarea>
             </div>
-            <button class="btn btn-green text-light text-uppercase py-2 px-4" type="submit">Send</button>
+            <p class="underline-btn">
+              <a type="submit">Send</a>
+            </p> 
           </form>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-5 offset-lg-1">
-          <h4 class="mb-4">Social media</h4>
+          <h4 class="mb-4">Find me here</h4>
           <ul class="list-inline d-flex flex-wrap justify-content-between h-50">
-            <li><a href="" target="_blank"><i class="fa-2x fab fa-linkedin-in text-dark"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa-2x fab fa-github-alt text-dark"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa-2x fab fa-codepen text-dark"></i></a></li>
-            <li><a href="" target="_blank"><img src="img/codewars.svg" width="29" height="29"></a></li>
+            <li><a href="https://www.linkedin.com/in/ada-gilad/" target="_blank"><i class="fa-2x fab fa-linkedin-in text-dark"></i></a></li>
+            <li><a href="https://github.com/adatg" target="_blank"><i class="fa-2x fab fa-github-alt text-dark"></i></a></li>
+            <li><a href="https://codepen.io/adatg/" target="_blank"><i class="fa-2x fab fa-codepen text-dark"></i></a></li>
+            <li><a href="https://www.codewars.com/users/adatg" target="_blank">
+              <img class="hide-onHover" src="img/codewars.svg" width="38" height="38">
+              <img class="show-onHover" src="img/codewarsgreen.svg" width="38" height="38">
+            </a></li>
           </ul>
         </div>
       </div>
@@ -314,36 +324,6 @@
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-
-    // Initiate waypoint
-    $(document).ready(function(){
-      $('#hero').waypoint(function() {
-        $('.rotate-this').toggleClass('rotated');
-        $('.nav-link').toggleClass('rotate');
-      },
-      {offset: '5%'});
-      $('#about-text').waypoint(function() {
-            $("#about-text").addClass('visible');
-            // $("#projects-text").addClass('visible');
-            // $("#contact-text").addClass('visible');
-        }, {offset:'70%'});
-    });
-
-    // Smooth Scrolling
-    $("#nav-main a").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          window.location.hash = hash;
-        });
-      }
-    });
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
