@@ -17,13 +17,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+
+
   <!-- Style -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/boiler.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body data-spy="scroll" data-target="#nav-main" data-offset="30">
   <div class="overlay"></div>
+  <div class="color-bg"></div>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -34,10 +39,8 @@
     <div class="hamburger-to-close" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false" aria-label="Toggle navigation">
       <span class="hamburger-middle"></span>
     </div>
-
     <div class="collapse navbar-collapse-custom" id="nav-main">
       <ul class="navbar-nav pl-5 pt-5">
-       <!--  <div class=""> -->
         <li class="nav-item">
           <a class="nav-link " href="#about">About</a>
         </li>
@@ -50,7 +53,6 @@
         <li class="nav-item">
           <a class="nav-link " href="#">Blog</a>
         </li>
-      <!-- </div> -->
       </ul>
     </div>
   </nav>
@@ -95,16 +97,16 @@
           <h4 class="mb-5">Skills</h4>
           <ul class="d-flex list-inline btn-lang justify-content-between">
             <li class="pr-3">
-              <button class="btn btn-green text-light rounded-circle text-uppercase ">HTML</button>
+              <button class="btn btn-round-filled text-light rounded-circle text-uppercase ">HTML</button>
             </li>
             <li class="pr-3">
-              <button class="btn btn-green text-light rounded-circle text-uppercase">CSS</button>
+              <button class="btn btn-round-filled text-light rounded-circle text-uppercase">CSS</button>
             </li>
             <li class="pr-3">
-              <button class="btn btn-green text-light rounded-circle text-uppercase">SASS</button>
+              <button class="btn btn-round-filled text-light rounded-circle text-uppercase">SASS</button>
             </li>
-            <li class="pr-3">
-              <button class="btn btn-green text-light rounded-circle text-uppercase">JS</button>
+            <li class="">
+              <button class="btn btn-round-filled text-light rounded-circle text-uppercase">JS</button>
             </li>
             <!-- <li class="">
               <button class="btn btn-outline-dark rounded-circle">jQ</button>
@@ -112,10 +114,10 @@
           </ul>
           <ul class="d-flex list-inline my-4 btn-frame justify-content-between">
             <li class="pr-2">
-              <p class="text-uppercase py-2 px-4">Bootstrap</p>
+              <p class="text-uppercase py-2 px-4"><span class="">[</span> Bootstrap <span class="">]</span></p>
             </li>
             <li class="pr-2">
-              <p class="text-uppercase py-2 px-4">Wordpress</p>
+              <p class="text-uppercase py-2 px-4"><span class="">[</span> Wordpress <span class="">]</span></p>
             </li>
             <!-- <li class="pr-2">
               <button class="btn  bg-dark text-light  text-uppercase py-2 px-4">GitHub</button>
@@ -145,7 +147,7 @@
         </div>
         <div class="col-lg-9">
           <p class="text-justify">
-            Below you can explore some of the projects I worked on. I have built custom websites and customized themes both with HTML and on Wordpress. All my websites are responsive and SEO friendly. 
+            Below you can explore a few of the projects I worked on. I have built custom websites and customized themes both with HTML and on Wordpress. All my websites are responsive and SEO friendly. 
           </p>
         </div>
       </div>
@@ -163,7 +165,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div class="card bg-light">
             <div class="card-img">
-              <img class="img-fluid" src="img/gifsc.gif" alt="">
+              <div class="img-fluid shiran" src="img/shiransccr.png" alt=""></div>
             </div>
             <a class="" href="">
               <div class="card-img-overlay">
@@ -261,7 +263,7 @@
   </section>
   <!-- END Projects -->
   <!-- Contact -->
-  <section id="contact" class="py-5 bg-light">
+  <section id="contact" class="py-5 bg-yellow">
     <div class="container">
       <div class="row py-5">
         <div class="col-lg-3 col-md-12 px-md-5">
