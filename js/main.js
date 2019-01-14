@@ -1,12 +1,19 @@
 // Initiate waypoint
 $(document).ready(function(){
     $('#about-text').waypoint(function() {
-        $("#about-text").addClass('visible');
+        $('#about-text').addClass('visible');
     }, {offset:'70%'});
+
+    $('#contact').waypoint(function(){
+        $('.color-bg.bottom').addClass('showUp');
+    }, {offset:'40%'}),
+    $('#contact').waypoint(function(){
+        $('#contact').addClass('bg-yellow');
+    }, {offset:'50%'})
 });
 
 // Smooth Scrolling
-$("#nav-main a").on('click', function (event) {
+$('#nav-main a').on('click', function (event) {
     if (this.hash !== "") {
         event.preventDefault();
 
@@ -40,11 +47,21 @@ $("#moreAbout").on('click', function (event) {
     }
 });
 
+//Nav animation
 $(function() {
 	// Click Hamburger to Close
 	$( '.hamburger-to-close' ).click( function( event ) {
         $( this ).toggleClass( 'close' );
         // Toggle overlay
         $('.overlay').toggleClass('show');
+    });
+});
+
+//Hide nav when clicked on screen
+$(function() {
+    $('.overlay').click(function(event){
+        $(this).toggleClass('show');
+        $('.navbar-collapse-custom').toggleClass('show');
+        $('.hamburger-to-close').toggleClass( 'close' );
     });
 });
