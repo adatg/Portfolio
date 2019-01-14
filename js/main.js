@@ -3,13 +3,6 @@ $(document).ready(function(){
     $('#about-text').waypoint(function() {
         $('#about-text').addClass('visible');
     }, {offset:'70%'});
-
-    $('#contact').waypoint(function(){
-        $('.color-bg.bottom').addClass('showUp');
-    }, {offset:'40%'}),
-    $('#contact').waypoint(function(){
-        $('#contact').addClass('bg-yellow');
-    }, {offset:'50%'})
 });
 
 // Smooth Scrolling

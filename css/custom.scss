@@ -21,7 +21,7 @@ body {
 	line-height: 1.5;
 	font-size: 1.2rem;
 	position: relative;
-	max-height: calc(150em - 27em);
+
 }
 
 ::-webkit-scrollbar {
@@ -67,6 +67,24 @@ h4.card-title {
     background-color: $yellow;
 }
 
+.bg-color {
+	position: fixed;
+	width: 100%;
+	height: 27em;
+	background-color: $yellow;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	&.white {
+		position: fixed;
+		background-color: $white;
+	}
+}
+.wrap-white {
+	background-color: $white;
+	padding-bottom: 1em;
+}
+
 .bg-half {
 	z-index: -1;
 	position: absolute;
@@ -79,22 +97,6 @@ h4.card-title {
     width: 100%;
     height: 27em;;
 	z-index: -1;
-	&.bottom {
-		top: 0;
-		position: absolute;
-		height: 0;
-		left: 0;
-		-webkit-transform: translateY(0%);
-			-ms-transform: translateY(0%);
-			transform: translateY(00%);
-		&.showUp {
-			transition: height 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
-			height: 11.3em;
-			-webkit-transform: translateY(100%);
-			-ms-transform: translateY(100%);
-			transform: translateY(100%);
-		}
-	}
 	&.white {
 		background-color: $white;
 		top: 26em;
@@ -196,12 +198,15 @@ a {
 }
 // navigation
 .navbar {
-	width: 25%;
+	width: 17em;
 	right: 0;
 	top: 0;
     position: fixed;
     .navbar-collapse-custom {
-        position: absolute;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
         -webkit-transition: -webkit-transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
         -moz-transition: -moz-transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
         transition: transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
@@ -227,7 +232,21 @@ a {
                     }
                 }
             }
-        }
+		}
+		.nav-bottom-links {
+			width: 61%;
+			p {
+				font-size: 0.9rem;
+				font-weight: 600;
+			}
+			.list-inline {
+				width: 100%;
+
+				img {
+					vertical-align: baseline;
+				}
+			}
+		}
     }
 }
 .hamburger-to-close {
@@ -308,12 +327,6 @@ a {
 	}
 }
 
-#skills, #projects, #contact {
-	position: relative;
-    top: -27em;
-    z-index: 1;
-}
-
 .btn-round-filled {
 	background-color: $green;
 	border-color: $green;
@@ -392,7 +405,8 @@ a {
 	}
 }
 #skills {
-    position: relative;
+	position: relative;
+	z-index: 1;
     .container {
 		position: relative;
         .bg-white {
