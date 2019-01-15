@@ -104,7 +104,7 @@ h4.card-title:before {
 a:hover .hide-onHover {
   display: none; }
 a:hover .show-onHover {
-  display: block;
+  display: inline;
   z-index: 1; }
 
 .active {
@@ -161,9 +161,9 @@ a:hover .show-onHover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    -webkit-transition: -webkit-transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
-    -moz-transition: -moz-transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
-    transition: transform 300ms cubic-bezier(1, 0, 0, 1) 0ms, right 300ms cubic-bezier(1, 0, 0, 1) 0ms;
+    -webkit-transition: -webkit-transform 200ms cubic-bezier(1, 0, 0, 1) 0ms, right 200ms cubic-bezier(1, 0, 0, 1) 0ms;
+    -moz-transition: -moz-transform 200ms cubic-bezier(1, 0, 0, 1) 0ms, right 200ms cubic-bezier(1, 0, 0, 1) 0ms;
+    transition: transform 200ms cubic-bezier(1, 0, 0, 1) 0ms, right 200ms cubic-bezier(1, 0, 0, 1) 0ms;
     right: -400px;
     top: 0;
     height: 100vh;
@@ -337,9 +337,39 @@ a:hover .show-onHover {
   background-color: #fff; }
 
 .card {
-  border: 0; }
+  border: 0;
+  overflow: hidden; }
+  .card:hover .card-img-overlay {
+    left: -15em;
+    transition: left 300ms ease-in-out;
+    background-color: #053C66; }
+  .card:hover .card-img-overlay-small {
+    right: -9em;
+    transition: right 300ms ease-in-out; }
   .card .card-img-overlay {
-    display: none; }
+    width: 65%;
+    height: 100%;
+    background-color: #ebebeb;
+    transition: left 300ms ease-in-out; }
+    .card .card-img-overlay h4 {
+      font-size: 1.2rem; }
+    .card .card-img-overlay p {
+      font-size: 1.2rem; }
+      .card .card-img-overlay p small {
+        font-size: 1rem; }
+    .card .card-img-overlay .card-text:last-child {
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 1rem; }
+  .card .card-img-overlay-small {
+    width: 35%;
+    position: absolute;
+    background-color: #053C66;
+    opacity: 0.6;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: right 300ms ease-in-out; }
 
 #contact li {
   height: 29px;
