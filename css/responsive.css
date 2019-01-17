@@ -1,0 +1,84 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px; } }
+@media (max-width: 780px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em; }
+
+  .navbar {
+    width: 20em; }
+
+  .btn-lang button.rounded-circle {
+    width: 4rem;
+    height: 4rem; }
+
+  .btn-frame li p {
+    font-size: 1rem; }
+
+  #hero h1 {
+    font-size: 3rem; }
+  #hero .copy-text {
+    font-size: 2rem; } }
+@media (max-width: 430px) {
+  .navbar .navbar-collapse-custom .navbar-nav .nav-link {
+    font-size: 1.5rem; }
+
+  .hamburger-to-close {
+    top: 40%;
+    right: 10%;
+    width: 30px; }
+    .hamburger-to-close:before, .hamburger-to-close:after, .hamburger-to-close .hamburger-middle {
+      width: 30px; }
+
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5em; }
+  #hero .copy-text {
+    font-size: 1.5rem; }
+
+  .card .card-img-overlay p, .card .card-img-overlay h4 {
+    font-size: 1rem; }
+    .card .card-img-overlay p small, .card .card-img-overlay h4 small {
+      font-size: 0.8rem; } }
+@media (max-width: 380px) {
+  p, a, li, .underline-btn a {
+    font-size: 1rem; }
+
+  h2, h4 {
+    font-size: 1.2rem; }
+
+  #nav-main img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle; }
+
+  #hero h1 {
+    font-size: 2rem;
+    margin-top: 1.5em; }
+  #hero .copy-text {
+    font-size: 1rem; }
+
+  .btn-lang button.rounded-circle {
+    font-size: 0.8rem;
+    width: 3.5rem;
+    height: 3.5rem; }
+
+  .btn-frame li p {
+    font-size: 0.8rem; }
+
+  #skills .container .bg-white .list-services li {
+    font-size: 1rem; }
+
+  .card .card-img-overlay h4 {
+    font-size: 0.8rem; }
+  .card .card-img-overlay p {
+    font-size: 0.7rem !important; }
+    .card .card-img-overlay p small {
+      font-size: 0.6rem; }
+
+  #contact img {
+    width: 32px;
+    height: 32px; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -82,6 +82,7 @@ h4.card-title {
 }
 .wrap-white {
 	background-color: $white;
+	margin-bottom: -1em;
 	padding-bottom: 1em;
 }
 
@@ -435,12 +436,12 @@ a {
 	border: 0;
 	overflow: hidden;
 	&:hover .card-img-overlay {
-		left: -15em;
+		left: -62%;
 		transition: left 300ms ease-in-out;
 		background-color: #053C66;
 	}
 	&:hover .card-img-overlay-small {
-		right: -9em;
+		right: -40%;
 		transition: right 300ms ease-in-out;
 	}
 	.card-img-overlay {

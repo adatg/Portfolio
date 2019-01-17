@@ -60,6 +60,7 @@ h4.card-title:before {
 
 .wrap-white {
   background-color: #fff;
+  margin-bottom: -1em;
   padding-bottom: 1em; }
 
 .bg-half {
@@ -340,11 +341,11 @@ a:hover .show-onHover {
   border: 0;
   overflow: hidden; }
   .card:hover .card-img-overlay {
-    left: -15em;
+    left: -62%;
     transition: left 300ms ease-in-out;
     background-color: #053C66; }
   .card:hover .card-img-overlay-small {
-    right: -9em;
+    right: -40%;
     transition: right 300ms ease-in-out; }
   .card .card-img-overlay {
     width: 65%;

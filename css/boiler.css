@@ -97,23 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@media (min-width: 1200px) {
-.container {
-    max-width: 1000px;
-    }
-}
-
-@media (max-width: 780px) {
-    .btn-lang button.rounded-circle {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .btn-frame li p {
-        font-size: 1rem;
-    }    
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
