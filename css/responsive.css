@@ -7,7 +7,7 @@
     margin-bottom: 1em; }
 
   .navbar {
-    width: 20em; }
+    width: 100%; }
 
   .btn-lang button.rounded-circle {
     width: 4rem;
@@ -19,7 +19,10 @@
   #hero h1 {
     font-size: 3rem; }
   #hero .copy-text {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+
+  #about-text {
+    opacity: 1; } }
 @media (max-width: 430px) {
   .navbar .navbar-collapse-custom .navbar-nav .nav-link {
     font-size: 1.5rem; }

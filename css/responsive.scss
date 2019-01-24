@@ -10,7 +10,7 @@
         margin-bottom: 1em;
     }
     .navbar {
-        width: 20em;
+        width: 100%;
     }
     .btn-lang button.rounded-circle {
         width: 4rem;
@@ -27,7 +27,10 @@
         .copy-text {
             font-size: 2rem;
         }
-    }    
+    } 
+    #about-text {
+        opacity: 1;
+    }   
 }
 
 @media (max-width: 430px) {
