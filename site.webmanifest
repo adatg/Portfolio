@@ -1,7 +1,9 @@
 {
     "name": "AdaGilad",
+    "short_name": "AdaG",
     "background_color": "#fff",
     "start_url": "/",
+    "display": "browser",
     "icons": [{
         "src": "icon.png",
         "sizes": "192x192",
